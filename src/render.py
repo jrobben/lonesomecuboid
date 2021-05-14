@@ -7,12 +7,12 @@ def comic_from_filepath(filepath: str):
   return splitext(basename(filepath))[0]
 
 def image_url_from_filepath(filepath: str):
-  return filepath
-  # return f'https://www.lonesomecuboid.com/{filepath}'
+  # return filepath
+  return f'https://www.lonesomecuboid.com/{filepath}'
 
 def url_from_comic(comic: str):
-  return f'{comic}.html'
-  # return f'https://www.lonesomecuboid.com/{comic}.html'
+  # return f'{comic}.html'
+  return f'https://www.lonesomecuboid.com/{comic}.html'
 
 def render():
   target = dirname(dirname(__file__))

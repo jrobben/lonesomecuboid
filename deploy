@@ -8,4 +8,4 @@ git add comics/*.png
 git add comics/*.xcf
 src/render.py
 git add *.html
-git commit -m "'$*'"
+git commit -m "$*"
