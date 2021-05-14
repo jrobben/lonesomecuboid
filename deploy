@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -z "$VIRTUAL_ENV" ]; then
+  . env/bin/activate
+fi
+
+git add comics/*.png
+git add comics/*.xcf
+src/render.py
+git add *.html
+git commit -m "'$*'"
